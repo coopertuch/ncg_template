@@ -1,5 +1,4 @@
 const express = require("express"),
-  // path = require("path"),
   cors = require("cors"),
   app = express();
 app.use(cors());
@@ -47,6 +46,7 @@ app.get("/submit-form-get", function(req, res) {
 
 // const parser = require("body-parser");
 // app.use(parser.urlencoded({ extended: true }));
+// path = require("path"),
 
 // app.get("/script.js", function(req, res) {
 //   res.sendFile(path.join(__dirname + "/script.js"));
