@@ -2,9 +2,6 @@ const express = require("express"),
   path = require("path"),
   cors = require("cors"),
   app = express();
-// const parser = require("body-parser");
-// app.use(parser.urlencoded({ extended: true }));
-
 app.use(cors());
 
 app.set("views", "../views");
@@ -48,7 +45,7 @@ app.get("/submit-form-get", function(req, res) {
     let ssn = req.query.ssn;
     var query = { name: last, dob: dob, ssn: ssn };
     dbo
-      .collection("cheerupmodels")
+      .collection("debt")
       .find(query)
       .toArray(function(err, result) {
         if (!result.length) {
@@ -63,3 +60,6 @@ app.get("/submit-form-get", function(req, res) {
       });
   });
 });
+
+// const parser = require("body-parser");
+// app.use(parser.urlencoded({ extended: true }));
