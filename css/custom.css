@@ -1,0 +1,32 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+p {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.debt {
+  margin-top: 10px;
+}
+
+.finalbutton {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  background: #434bdf;
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 3px;
+  line-height: 1;
+  padding: 12px 30px;
+}

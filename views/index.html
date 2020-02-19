@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Wilio Survey, Quotation, Review and Register form Wizard by Ansonika."
+    />
+    <meta name="author" content="Ansonika" />
+    <title>Get Rid Of My Charge-Off</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      href="../img/apple-touch-icon-57x57-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      sizes="72x72"
+      href="../img/apple-touch-icon-72x72-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      sizes="114x114"
+      href="../img/apple-touch-icon-114x114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      sizes="144x144"
+      href="../img/apple-touch-icon-144x144-precomposed.png"
+    />
+
+    <!-- GOOGLE WEB FONT -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600"
+      rel="stylesheet"
+    />
+
+    <!-- BASE CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/vendors.css" rel="stylesheet" />
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="../css/custom.css" rel="stylesheet" />
+
+    <!-- MODERNIZR MENU -->
+    <script src="../js/modernizr.js"></script>
+  </head>
+
+  <body>
+    <div id="preloader">
+      <div data-loader="circle-side"></div>
+    </div>
+    <!-- /Preload -->
+
+    <div id="loader_form">
+      <div data-loader="circle-side-2"></div>
+    </div>
+    <!-- /loader_form -->
+
+    <nav>
+      <ul class="cd-primary-nav">
+		<li><a href="index.html" class="animated_link">Home</a></li>
+		<li><a href="index.html" class="animated_link">Message Us</a></li>
+		<li><a href="index.html" class="animated_link">Call Us</a></li>
+      </ul>
+    </nav>
+    <!-- /menu -->
+
+    <div class="container-fluid full-height">
+		<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+      <div class="row row-height">
+        <div class="col-lg-6 content-left">
+          <div class="content-left-wrapper">
+            <a href="index.html" id="logo"
+              ><img src="../img/logo.png" alt="" width="150" height="50"
+            /></a>
+            <!-- /social -->
+            <div>
+              <figure>
+                <img src="../img/info_graphic_5.svg" alt="" class="img-fluid" />
+              </figure>
+              <h2><b>Get Rid Of My Charge-Off</b></h2>
+              <p>
+                Enter your information exactly below to find out what debt you
+                owe. <b>Get Rid Of My Charge-Off</b> is dedicated to assisting
+                you settle your debts! Click the phone or mail icon above to get
+                in contact with us.
+              </p>
+            </div>
+            <div class="copy">© 2020 Get Rid Of My Charge-Off</div>
+          </div>
+          <!-- /content-left-wrapper -->
+        </div>
+        <!-- /content-left -->
+
+        <div class="col-lg-6 content-right" id="start">
+          <div id="wizard_container">
+            <div id="top-wizard">
+              <div id="progressbar"></div>
+            </div>
+            <!-- /top-wizard -->
+
+              <!-- Leave for security protection, read docs for details -->
+              <div id="middle-wizard">
+                <div class="step">
+                  <h3 class="main_question">
+                    Please add your Last Name, Date of Birth, and Last 4 Digits of your Social Security Number to retrieve your Debt Information.
+                  </h3>
+                  <div class="form-group">
+					<form method="get">
+						<p class="left">Last Name:</p><input class="input form-control required" type="text" name="last" id="last" placeholder="Name" /><br />
+						<p class="left">Date Of Birth (MM/DD/YYYY):</p><input class="input form-control required" type="text" name="dob" id="dob" placeholder="MM/DD/YYYY" /><br />
+						<p class="left">Last 4 Digits Of SSN (####):</p><input class="input form-control required" type="text" name="ssn" id="ssn" placeholder="####" /></form><br />
+						<div id="button">
+							<div class="margin"><input class="input pay blue finalbutton" onClick="myFunction()" id="Test" type="button" name="Submitted" value="Submit" /></div>
+						</div><br />
+					</form>
+					<div class="results">
+						<p class="left">Debt:</p>
+						<p class="box form-control" id="debtResult"></p>
+						<p class="left">Details:</p>
+						<p class="result form-control" id="detailsResult"></p>
+					</div>
+					<form action="https://www.usaepay.com/gate.php" method="POST"><input type="hidden" name="UMkey" value="_PCNcUhk6D84TYpq5WwiScu1bu28DIxS" /><input type="hidden" name="UMredir" value="https://sandbox.usaepay.com/pay/4nkt6qcsg37qrf1v8/4EIX4kyk" /><input type="hidden" name="UMinvoice" value="1234" /><input type="hidden"
+							name="UMamount" value="1.00" />
+						<div><input class="input pay blue finalbutton debt" type="submit" value="Pay Debt" /></div>
+					</form>
+			  <!-- /bottom-wizard -->         
+			</div>
+          <!-- /Wizard container -->
+        </div>
+        <!-- /content-right-->
+      </div>
+      <!-- /row-->
+    </div>
+    <!-- /container-fluid -->
+
+    <div class="cd-overlay-nav">
+      <span></span>
+    </div>
+    <!-- /cd-overlay-nav -->
+
+    <div class="cd-overlay-content">
+      <span></span>
+    </div>
+    <!-- /cd-overlay-content -->
+
+    <!-- COMMON SCRIPTS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/common_scripts.min.js"></script>
+    <script src="../js/velocity.min.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/connect.js"></script>
+
+    <!-- Wizard script -->
+    <script src="../js/survey_func.js"></script>
+  </body>
+</html>

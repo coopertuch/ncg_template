@@ -1,0 +1,36 @@
+extends base.pug
+
+block content
+    div.container
+        div.nav
+            a.navLeft(href='#') Get Rid Of My Charge-Off
+            a.navRight(href='#') Message
+            a.navRight(href='#') Call
+        div.header
+            p.intro Enter your information exactly below to find out what debt you owe. <b>Get Rid Of My Charge-Off</b> is dedicated to assisting you settle your debts!
+        form(method="get")
+            p.left Last Name:
+            input.input(type="text", name="last", id="last", placeholder="Smith")
+            p.left Date Of Birth (MM/DD/YYYY):
+            input.input(type="text", name="dob", id="dob", placeholder="MM/DD/YYYY")
+            p.left Last 4 Digits Of SSN (####):
+            input.input(type="text", name="ssn", id="ssn", placeholder="####")
+        div#button
+            div.margin
+                input.input.pay.blue(onClick="myFunction()" id="Test" type="button" name="Submitted" value="Submit")    
+        div.results
+            p.left Debt:
+            p#debtResult.box
+            p.left Details:
+            p#detailsResult.result
+        form(action="https://www.usaepay.com/gate.php" method="POST")
+            input(type="hidden" name="UMkey" value="_PCNcUhk6D84TYpq5WwiScu1bu28DIxS")
+            input(type="hidden" name="UMredir" value="https://sandbox.usaepay.com/pay/4nkt6qcsg37qrf1v8/4EIX4kyk")
+            input(type="hidden" name="UMinvoice" value="1234")
+            input(type="hidden" name="UMamount" value="1.00")
+            div
+                input.input.pay.blue(type="submit" value="Pay Debt")
+        footer.nav.foot
+            a.navLeft(href='#') © 2020 Get Rid Of My Charge-Off
+            a.navRight(href='#') Message
+            a.navRight(href='#') Call
